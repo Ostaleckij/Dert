@@ -1,0 +1,69 @@
+.menu,
+.news,
+.list,
+.foter,
+.nav,
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color:#140418
+}
+  .menu{
+      background-color: aqua;
+  }
+  .news{
+      background-color: blue;
+  }
+  .list{
+      background-color: brown;
+  }
+  .foter{
+      background-color: chartreuse;
+  }
+  .nav{
+      background-color: darkgoldenrod;
+  }
+  .logo{
+      background-color: darkgreen;
+  }
+
+  body {
+      display: grid;
+      grid-template-columns: [a]100px [b]65fr [c]35fr [d];
+      grid-template-rows: [first]100px [second]minmax(300px, 1fr) [third]150px [fourth];
+      min-height:100vh;
+      margin:0;
+  }
+  .foter{
+      grid-column-start: 1;
+     grid-column-end: 3;
+     grid-row-start: 3;
+     grid-row-end: 4;
+  }
+  .logo{
+      grid-column-start:1 ;
+      grid-column-end:2;
+      grid-row-start:1;
+      grid-row-end:2;
+  }
+  .menu{
+    grid-column-start:2 ;
+      grid-column-end:4;
+      grid-row-start:1;
+      grid-row-end:2;
+  }
+  .nav{
+    grid-column-start:3 ;
+    grid-column-end:4;
+    grid-row-start:2;
+    grid-row-end:4;
+  }
+  .list{
+    grid-column-start:2 ;
+    grid-column-end:3;
+    grid-row-start:2;
+    grid-row-end:3;
+  }
+ 
